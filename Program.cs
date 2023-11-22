@@ -12,7 +12,7 @@ else
 }
 */
 // Задача 2
-Console.Clear();
+/*Console.Clear();
 Console.Write("Введите координату X: ");
 int X = int.Parse(Console.ReadLine()!);
 while(X == 0)
@@ -43,4 +43,35 @@ else if(X < 0 && Y <0)
 else
 {
     Console.WriteLine("IV");  
+}
+{
+      int n = 1;
+      while(n > number)
+      {
+        if(n % 2 == 0)
+        {
+           Console.WriteLine($"number = {number} → {n}  ");
+        }
+        n = n + 1;
+      }
+    }
+*/
+// Задача 3.
+Console.Clear();
+Console.Write("Введите число от 10 до 99: ");
+int X = int.Parse(Console.ReadLine()!);
+while(X < 10 || X > 99)
+{
+    Console.Write("Введите число от 10 до 99:  ");
+    X = int.Parse(Console.ReadLine()!);
+}
+int a = X / 10;
+int b = X % 10;
+if(a > b)
+{
+    Console.WriteLine($"{a}");
+}
+else 
+{
+    Console.WriteLine($"{b}");
 }
