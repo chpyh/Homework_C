@@ -57,7 +57,7 @@ else
     }
 */
 // Задача 3.
-Console.Clear();
+/*Console.Clear();
 Console.Write("Введите число от 10 до 99: ");
 int X = int.Parse(Console.ReadLine()!);
 while(X < 10 || X > 99)
@@ -75,3 +75,21 @@ else
 {
     Console.WriteLine($"{b}");
 }
+*/
+//Задача 4
+Console.Clear();
+Console.Write("Введите натуральное число: ");
+int f = int.Parse(Console.ReadLine()!);
+int c = f.ToString().Length;
+while(c > 1)
+{
+    int b = Convert.ToInt32(Math.Pow(10, c - 1));
+    int a = f / b;
+    Console.Write($"{a}, ");
+    c = c - 1;
+    f = f - (b * a);
+}
+
+    int d = f % 10;
+
+    Console.Write($"{d}");
